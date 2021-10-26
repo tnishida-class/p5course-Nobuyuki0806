@@ -1,8 +1,8 @@
 // チェッカー
 function setup() {
   createCanvas(200, 200);
-  let width=200;
-  // これを入れないとwidthが何か分からない？
+  // let width=200;
+  // これを入れないとwidthが何か分からない？いらない
   let size = width / 8;
   noStroke();
   for(let i = 0; i < 8; i++){
