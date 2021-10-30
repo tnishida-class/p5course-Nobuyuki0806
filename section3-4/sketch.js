@@ -18,8 +18,8 @@ function draw(){
   if(!grabbed){ // つかんでいないときだけアニメーションさせる
     x += vx;
     y += vy;
-    if(x < 0 || x > width){ vx = -0.8 * vx; }
-    if(y < 0 || y > height){ vy = -0.8 * vy; }
+    if(x < 0 || x > width){ vx = -1 * vx; }
+    if(y < 0 || y > height){ vy = -1 * vy; }
     x = constrain(x, 0, width);
     y = constrain(y, 0, height);
   }
