@@ -15,6 +15,7 @@ function setup(){
 if(mouseIsPressed){
     background(160, 192, 255);
     count = (count + 2) % cycle;
+    // countに足している数字が変化の割合みたいなもん
   // BLANK[1]
   if(count<20){
     ellipse(width / 2, height / 2, 20)}
