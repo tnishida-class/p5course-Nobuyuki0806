@@ -14,12 +14,16 @@ function setup(){
   let total = 0;
   for(let i = 0; i < scores.length; i++){ total += scores[i]; }
   console.log(total)
+
+
   // BLANK[1]
   ellipse(200,200,300);
+  let x = 0;
+  // xの定義はforの外でやらないと毎回xが定義されてしまって意味ない
   for(let i=0;i<scores.length;i++){
-    // fill(240)
-    // arc(200,200,300,300,PI*scores[i]/total,PI*scores[i+1]/total,true);
-    line(200,200,200+150*cos(2*PI*scores[i]/total),200+150*sin(2*PI*scores[i]/total))
-    // line(200,200,200+150*cos(PI*scores[i+1]/total),200+150*sin(PI*scores[i+1]/total))
+
+    x += scores[i];
+    line(200,200,200+150*cos((-1)*0.5*PI+2*PI*x/total),200+150*sin((-1)*0.5*PI+2*PI*x/total));
+    text(scores[i].toPrecision(3), 200+100*cos((-1)*0.5*PI+2*PI*(x-scores[i]*0.5)/total), 200+100*sin((-1)*0.5*PI+2*PI*(x-scores[i]*0.5)/total));
   }
 }
