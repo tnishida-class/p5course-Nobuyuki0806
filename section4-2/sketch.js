@@ -11,8 +11,6 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  let x=width/2,y=height/2;
-  ellipse(x,y,random(20, 100));
   for(let i = 0; i < balls.length; i++){
     let b = balls[i];
     ellipse(b.x, b.y, b.size);
