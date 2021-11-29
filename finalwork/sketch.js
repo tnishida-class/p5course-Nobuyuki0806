@@ -32,7 +32,7 @@ function draw(){
     o=m/n;
     // 点と直線の距離の公式
 
-    if(o<10&&sqrt((x-xf[i])*(x-xf[i])+(y-yf[i])*(y-yf[i]))<sqrt((xl[i]-xf[i])*(xl[i]-xf[i])+(yl[i]-yf[i])*(yl[i]-yf[i]))&&sqrt((x-xl[i])*(x-xl[i])+(y-yl[i])*(y-yl[i]))<sqrt((xl[i]-xf[i])*(xl[i]-xf[i])+(yl[i]-yf[i])*(yl[i]-yf[i]))){
+    if(o<10&&sqrt((x-xf[i])*(x-xf[i])+(y-yf[i])*(y-yf[i]))<sqrt((xl[i]-xf[i])*(xl[i]-xf[i])+(yl[i]-yf[i])*(yl[i]-yf[i]))+10&&sqrt((x-xl[i])*(x-xl[i])+(y-yl[i])*(y-yl[i]))<sqrt((xl[i]-xf[i])*(xl[i]-xf[i])+(yl[i]-yf[i])*(yl[i]-yf[i]))+10){
       x=30;
       y=530;
     }
